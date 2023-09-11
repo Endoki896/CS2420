@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0beb3ef9-589d-428b-8ac5-8e0a8803efd3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/a_small_2420_class.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign01/MathVector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign02/CS2420Class.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign02/CS2420ClassGeneric.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign02/CS2420Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign02/CS2420StudentGeneric.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign02/EmailAddress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign02/MailingAddress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign02/PhoneNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign02/StudentTrackerRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign02/UofUStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign03/PriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign03/SimplePriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab01/DiffUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab02/SquareRootTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab02/TimingExperiment01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab02/TimingExperiment02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab02/TimingExperiment03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab02/TimingExperiment04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab02/TimingExperiment05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab02/TimingExperiment06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab02/TimingExperiment07.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab02/TimingExperiment08.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab03/DebuggerPractice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab03/Part1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab03/Part2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab03/Part3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/BitwiseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting03/ArrayReverser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting03/MethodOverloading.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting03/tetromino/Tetromino.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting03/tetromino/TetrominoO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting03/tetromino/TetrominoS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting03/tetromino/TetrominoT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting04/arrayListBuilder/ArrayListBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting04/orchard/Orchard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting04/orchard/OrchardFruitComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting04/set/Set.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting04/shape/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting04/shape/PlanarGeometry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting04/shape/PlanarMotion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting04/shape/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting04/shape/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting04/shape/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting06/TimeAnalysis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting06/search/Search.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting06/search/SearchTimer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting06/search/words_alpha.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting06/simple_array/SimpleArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/assignments/assign01/MathVectorTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/assignments/assign02/CS2420ClassGenericTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/assignments/assign02/CS2420ClassTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/assignments/assign03/SimplePriorityQueueTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/labs/lab01/DiffUtilTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/messCode/meeting03/ArrayReverserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/messCode/meeting03/MethodOverloadingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/messCode/meeting03/tetromino/TetrominoSTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/messCode/meeting03/tetromino/TetrominoTTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/messCode/meeting04/arrayListBuilder/ArrayListBuilderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/messCode/meeting04/orchard/OrchardTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/messCode/meeting04/set/SetTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/messCode/meeting06/search/SearchTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/messCode/meeting06/simple_array/SimpleArrayTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2UMeJHZ906CpByR39evPkoBXAuH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/assignments/assign03" />
+      <recent name="$PROJECT_DIR$/src/main/java/labs/lab03" />
+      <recent name="$PROJECT_DIR$/src/main/java/messCode/meeting06" />
+      <recent name="$PROJECT_DIR$/src/test/java/assignments/assign02" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="messCode.meeting06.simple_array" />
+      <recent name="messCode.meeting06.search" />
+      <recent name="messCode.meeting04" />
+      <recent name="labs.lab01" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="assignments.assign03" />
+      <recent name="assignments.assign02" />
+      <recent name="" />
+      <recent name="messCode.meeting04.set" />
+      <recent name="messCode.meeting04.orchard" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="assignments.assign02" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0beb3ef9-589d-428b-8ac5-8e0a8803efd3" name="Changes" comment="" />
+      <created>1692753802717</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1692753802717</updated>
+      <workItem from="1692753803740" duration="42000" />
+      <workItem from="1692913335116" duration="3448000" />
+      <workItem from="1692990315224" duration="14373000" />
+      <workItem from="1693438151632" duration="2000" />
+      <workItem from="1693518359183" duration="8303000" />
+      <workItem from="1693674534401" duration="42267000" />
+      <workItem from="1694291460185" duration="8987000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
