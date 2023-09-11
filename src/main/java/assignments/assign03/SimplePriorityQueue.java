@@ -25,7 +25,7 @@ public class SimplePriorityQueue<Type> implements PriorityQueue<Type> {
     @SuppressWarnings("unchecked")
     private int binarySearch(Type target)
     {
-        int low = 0, mid, high = this.queue.length;
+        int low = 0, mid = this.queue.length / 2, high = this.queue.length;
         while(low <= high)
         {
             mid = (low + high) / 2;
@@ -34,7 +34,7 @@ public class SimplePriorityQueue<Type> implements PriorityQueue<Type> {
             else if(value > 0) high = mid - 1;
             else low = mid + 1;
         }
-        return -1;
+        return mid;
     }
 
     @SuppressWarnings("unchecked")
@@ -82,11 +82,30 @@ public class SimplePriorityQueue<Type> implements PriorityQueue<Type> {
         return output;
     }
 
+    private void shiftBack(int fromIndex)
+    {
+        for(int i = this.nonNullElements() - 1; i > fromIndex; i--)
+        {
+            if(this.queue[i] == null) continue;
+            this.queue[i + 1] = this.queue[i];
+            this.queue[i] = null;
+        }
+    }
+
     @Override
     public void insert(Type item)
     {
-        if(this.nonNullElements() + 1 > this.size()) resize(this.size() + 1);
-        this.queue[this.nonNullElements()] = item;
+        if(this.nonNullElements() + 1 >= this.size()) resize(this.size() + 1);
+        int nearestIndex = binarySearch(item);
+        int comp = this.comparator == null ? ((Comparable<? super Type>)this.queue[nearestIndex]).compareTo(item) : this.comparator.compare(this.queue[nearestIndex], item);
+        if(comp <= 0)
+        {
+            shiftBack(nearestIndex);
+            this.queue[nearestIndex] = item;
+        } else {
+            shiftBack(nearestIndex + 1);
+            this.queue[nearestIndex + 1] = item;
+        }
     }
 
     @Override
@@ -94,19 +113,18 @@ public class SimplePriorityQueue<Type> implements PriorityQueue<Type> {
     public void insertAll(Collection<? extends Type> coll)
     {
         if(this.nonNullElements() + coll.size() > this.size()) resize(this.nonNullElements() + coll.size());
-        int limit = this.nonNullElements() + coll.size();
         Type[] collArray = (Type[]) new Object[coll.size()];
         coll.toArray(collArray);
-        for(int i = this.nonNullElements(); i < limit; i++)
+        for(Type item : collArray)
         {
-            this.queue[i] = collArray[i - this.nonNullElements()];
+            this.insert(item);
         }
     }
 
     @Override
     public boolean contains(Type item)
     {
-        return false;
+        return this.queue[this.binarySearch(item)].equals(item);
     }
 
     @Override

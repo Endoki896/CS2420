@@ -4,77 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0beb3ef9-589d-428b-8ac5-8e0a8803efd3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/a_small_2420_class.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign01/MathVector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign02/CS2420Class.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign02/CS2420ClassGeneric.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign02/CS2420Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign02/CS2420StudentGeneric.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign02/EmailAddress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign02/MailingAddress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign02/PhoneNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign02/StudentTrackerRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign02/UofUStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign03/PriorityQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign03/SimplePriorityQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab01/DiffUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab02/SquareRootTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab02/TimingExperiment01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab02/TimingExperiment02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab02/TimingExperiment03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab02/TimingExperiment04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab02/TimingExperiment05.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab02/TimingExperiment06.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab02/TimingExperiment07.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab02/TimingExperiment08.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab03/DebuggerPractice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab03/Part1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab03/Part2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab03/Part3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/BitwiseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting03/ArrayReverser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting03/MethodOverloading.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting03/tetromino/Tetromino.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting03/tetromino/TetrominoO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting03/tetromino/TetrominoS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting03/tetromino/TetrominoT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting04/arrayListBuilder/ArrayListBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting04/orchard/Orchard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting04/orchard/OrchardFruitComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting04/set/Set.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting04/shape/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting04/shape/PlanarGeometry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting04/shape/PlanarMotion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting04/shape/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting04/shape/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting04/shape/Square.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting06/TimeAnalysis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting06/search/Search.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting06/search/SearchTimer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting06/search/words_alpha.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting06/simple_array/SimpleArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/assignments/assign01/MathVectorTester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/assignments/assign02/CS2420ClassGenericTester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/assignments/assign02/CS2420ClassTester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/assignments/assign03/SimplePriorityQueueTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/labs/lab01/DiffUtilTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/messCode/meeting03/ArrayReverserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/messCode/meeting03/MethodOverloadingTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/messCode/meeting03/tetromino/TetrominoSTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/messCode/meeting03/tetromino/TetrominoTTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/messCode/meeting04/arrayListBuilder/ArrayListBuilderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/messCode/meeting04/orchard/OrchardTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/messCode/meeting04/set/SetTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/messCode/meeting06/search/SearchTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/messCode/meeting06/simple_array/SimpleArrayTest.java" afterDir="false" />
+    <list default="true" id="0beb3ef9-589d-428b-8ac5-8e0a8803efd3" name="Changes" comment="CS stuff">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assignments/assign03/SimplePriorityQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignments/assign03/SimplePriorityQueue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,11 +94,23 @@
       <workItem from="1693438151632" duration="2000" />
       <workItem from="1693518359183" duration="8303000" />
       <workItem from="1693674534401" duration="42267000" />
-      <workItem from="1694291460185" duration="8987000" />
+      <workItem from="1694291460185" duration="11048000" />
     </task>
+    <task id="LOCAL-00001" summary="CS stuff">
+      <created>1694461508038</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1694461508038</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="CS stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="CS stuff" />
   </component>
 </project>
