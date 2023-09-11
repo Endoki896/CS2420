@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class SimplePriorityQueueTest {
 
-    private static int size = 10;
+    private static int size = 16;
 
     private static Integer[] testPrims = {
             0,
@@ -50,7 +50,7 @@ class SimplePriorityQueueTest {
         // initialize all queues
         queuePrim = new SimplePriorityQueue<>();
         queueString = new SimplePriorityQueue<>();
-        queueObj = new SimplePriorityQueue<>();
+        //queueObj = new SimplePriorityQueue<>();
 
         // insert test variables
         queuePrim.insertAll(arrayToList(testPrims));
@@ -74,13 +74,15 @@ class SimplePriorityQueueTest {
     }
 
     @Test
-    void isEmpty() {
+    void isEmpty()
+    {
         assertFalse(queuePrim.isEmpty());
         assertTrue(new SimplePriorityQueue<Integer>().isEmpty());
     }
 
     @Test
-    void clear() {
+    void clear()
+    {
         SimplePriorityQueue<Integer> clearTest = new SimplePriorityQueue<>();
     }
 
@@ -97,7 +99,6 @@ class SimplePriorityQueueTest {
 
     @Test
     void findMaxPrim() {
-
     }
 
     @Test

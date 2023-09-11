@@ -1,5 +1,7 @@
 package assignments.assign03;
 
+import jdk.jshell.spi.ExecutionControl;
+
 import java.util.Collection;
 import java.util.Comparator;
 import java.util.NoSuchElementException;
@@ -25,10 +27,12 @@ public class SimplePriorityQueue<Type> implements PriorityQueue<Type> {
     @SuppressWarnings("unchecked")
     private int binarySearch(Type target)
     {
-        int low = 0, mid = this.queue.length / 2, high = this.queue.length;
+        if(this.queue[0] == null) return 0;
+        int low = 0, mid = this.nonNullElements() / 2, high = this.nonNullElements();
         while(low <= high)
         {
             mid = (low + high) / 2;
+            if(this.queue[mid] == null) return mid;
             int value = this.comparator == null ? ((Comparable<? super Type>)this.queue[mid]).compareTo(target) : this.comparator.compare(this.queue[mid], target);
             if(value == 0) return mid;
             else if(value > 0) high = mid - 1;
@@ -97,7 +101,9 @@ public class SimplePriorityQueue<Type> implements PriorityQueue<Type> {
     {
         if(this.nonNullElements() + 1 >= this.size()) resize(this.size() + 1);
         int nearestIndex = binarySearch(item);
-        int comp = this.comparator == null ? ((Comparable<? super Type>)this.queue[nearestIndex]).compareTo(item) : this.comparator.compare(this.queue[nearestIndex], item);
+        int comp;
+        if(this.queue[nearestIndex] == null) comp = 0;
+        else comp = this.comparator == null ? ((Comparable<? super Type>)this.queue[nearestIndex]).compareTo(item) : this.comparator.compare(this.queue[nearestIndex], item);
         if(comp <= 0)
         {
             shiftBack(nearestIndex);
@@ -124,7 +130,7 @@ public class SimplePriorityQueue<Type> implements PriorityQueue<Type> {
     @Override
     public boolean contains(Type item)
     {
-        return this.queue[this.binarySearch(item)].equals(item);
+        return (this.isEmpty() ? false : this.queue[this.binarySearch(item)].equals(item));
     }
 
     @Override
