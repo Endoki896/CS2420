@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0beb3ef9-589d-428b-8ac5-8e0a8803efd3" name="Changes" comment="assign03 SimplePriorityQueue&lt;&gt; class first draft finished.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting7/simple_array/SimpleArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting7/sorting/SelectionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting7/sorting/SortTimer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting7/sorting/Sorter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/messCode/meeting7/simple_array/SimpleArrayTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/messCode/meeting7/sorting/SorterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/messCode/meeting06/simple_array/SimpleArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting06/simple_array/SimpleArray.java" afterDir="false" />
-    </list>
+    <list default="true" id="0beb3ef9-589d-428b-8ac5-8e0a8803efd3" name="Changes" comment="assign03 SimplePriorityQueue&lt;&gt; class first draft finished." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,7 +94,7 @@
       <workItem from="1693674534401" duration="42267000" />
       <workItem from="1694291460185" duration="20979000" />
       <workItem from="1694480957405" duration="16000" />
-      <workItem from="1694554944562" duration="1422000" />
+      <workItem from="1694554944562" duration="1606000" />
     </task>
     <task id="LOCAL-00001" summary="CS stuff">
       <created>1694461508038</created>
@@ -133,11 +124,29 @@
       <option name="project" value="LOCAL" />
       <updated>1694480808166</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="assign03 SimplePriorityQueue&lt;&gt; class first draft finished.">
+      <created>1694556737568</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1694556737568</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="CS stuff" />
