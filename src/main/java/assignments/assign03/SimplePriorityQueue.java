@@ -132,7 +132,7 @@ public class SimplePriorityQueue<Type> implements PriorityQueue<Type> {
     @Override
     public int size()
     {
-        return this.queue.length;
+        return this.nonNullElements();
     }
 
     @Override

@@ -40,9 +40,8 @@ public class SimpleArray<T> {
 	 * @param index
 	 * @return
 	 */
-	public T get(int index) {
-		// Implement
-		if(index >= this.size) return null;
+	public T get(int index) throws ArrayIndexOutOfBoundsException {
+		if(index >= this.size || index < 0) throw new ArrayIndexOutOfBoundsException();
 		return this.data[index];
 	}
 	
@@ -51,7 +50,6 @@ public class SimpleArray<T> {
 	 */
 	@SuppressWarnings("unchecked")
 	public void add(T element) {
-		// Implement
 		for(int i = 0; i < data.length; i++)
 		{
 			if(data[i] == null) {
@@ -66,7 +64,7 @@ public class SimpleArray<T> {
 	
 	/**
 	 * Remove element from the array.
-	 * @return whether the element was added
+	 * @return whether the element was removed
 	 */
 	public boolean remove(T element) {
 		// Implement
