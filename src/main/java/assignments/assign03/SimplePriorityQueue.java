@@ -1,7 +1,5 @@
 package assignments.assign03;
 
-import jdk.jshell.spi.ExecutionControl;
-
 import java.util.Collection;
 import java.util.Comparator;
 import java.util.NoSuchElementException;
@@ -28,14 +26,14 @@ public class SimplePriorityQueue<Type> implements PriorityQueue<Type> {
     private int binarySearch(Type target)
     {
         if(this.queue[0] == null) return 0;
-        int low = 0, mid = this.nonNullElements() / 2, high = this.nonNullElements();
+        int low = 0, high = this.nonNullElements()-1, mid = high / 2;
         while(low <= high)
         {
             mid = (low + high) / 2;
             if(this.queue[mid] == null) return mid;
             int value = this.comparator == null ? ((Comparable<? super Type>)this.queue[mid]).compareTo(target) : this.comparator.compare(this.queue[mid], target);
             if(value == 0) return mid;
-            else if(value > 0) high = mid - 1;
+            else if(value < 0) high = mid - 1;
             else low = mid + 1;
         }
         return mid;
@@ -78,21 +76,19 @@ public class SimplePriorityQueue<Type> implements PriorityQueue<Type> {
     {
         if(this.isEmpty()) throw new NoSuchElementException();
         Type output = this.queue[0];
-        for(int i = 1; i < this.queue.length; i++)
+        for(int i = 0; i < this.size() - 1;i++)
         {
-            this.queue[i - 1] = this.queue[i];
-            this.queue[i] = null;
+            this.queue[i] = this.queue[i+1];
         }
         return output;
     }
 
     private void shiftBack(int fromIndex)
     {
-        for(int i = this.nonNullElements() - 1; i > fromIndex; i--)
+        for(int i = this.queue.length - 1; i > 0; i--)
         {
-            if(this.queue[i] == null) continue;
-            this.queue[i + 1] = this.queue[i];
-            this.queue[i] = null;
+            if(this.queue[i - 1] == null) continue;
+            this.queue[i] = this.queue[i - 1];
         }
     }
 
@@ -130,7 +126,7 @@ public class SimplePriorityQueue<Type> implements PriorityQueue<Type> {
     @Override
     public boolean contains(Type item)
     {
-        return (this.isEmpty() ? false : this.queue[this.binarySearch(item)].equals(item));
+        return !this.isEmpty() && this.queue[this.binarySearch(item)] != null && this.queue[this.binarySearch(item)].equals(item);
     }
 
     @Override

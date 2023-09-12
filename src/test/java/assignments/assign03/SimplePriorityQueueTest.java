@@ -1,12 +1,10 @@
 package assignments.assign03;
 
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.NoSuchElementException;
+import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -44,8 +42,8 @@ class SimplePriorityQueueTest {
     private static SimplePriorityQueue<String> queueString;
     private static SimplePriorityQueue<Object> queueObj;
 
-    @BeforeAll
-    static void setUp()
+    @BeforeEach
+    void setUp()
     {
         // initialize all queues
         queuePrim = new SimplePriorityQueue<>();
@@ -55,7 +53,7 @@ class SimplePriorityQueueTest {
         // insert test variables
         queuePrim.insertAll(arrayToList(testPrims));
         queueString.insertAll(arrayToList(testStrings));
-        queueObj.insertAll(arrayToList(testObjects));
+        // queueObj.insertAll(arrayToList(testObjects));
     }
 
     // helper
@@ -84,6 +82,9 @@ class SimplePriorityQueueTest {
     void clear()
     {
         SimplePriorityQueue<Integer> clearTest = new SimplePriorityQueue<>();
+        clearTest.insertAll(Arrays.asList(1, 3, 4, 7, 8));
+        clearTest.clear();
+        assertTrue(clearTest.isEmpty());
     }
 
     @Test
@@ -99,22 +100,36 @@ class SimplePriorityQueueTest {
 
     @Test
     void findMaxPrim() {
+        int test = 9;
+        assertEquals(test, queuePrim.findMax());
     }
 
     @Test
     void deleteMaxPrim() {
+        int test = 9;
+        int finalTest = 8;
+        assertEquals(test, queuePrim.deleteMax());
+        assertEquals(finalTest, queuePrim.findMax());  // The next maximum should be 8 after 9 is deleted
     }
 
     @Test
     void insertPrim() {
+        queuePrim.insert(10);
+        int test = 10;
+        assertEquals(test, queuePrim.findMax());  // Now, 10 should be the maximum
     }
 
     @Test
     void insertAllPrim() {
+        List<Integer> newList = Arrays.asList(11, 12, 13);
+        queuePrim.insertAll(newList);
+        assertEquals(Integer.valueOf(13), queuePrim.findMax());  // The maximum should now be 13
     }
 
     @Test
     void containsPrim() {
+        assertTrue(queuePrim.contains(3));
+        assertFalse(queuePrim.contains(10));
     }
 
     // with Strings
@@ -137,16 +152,19 @@ class SimplePriorityQueueTest {
 
     @Test
     void containsString() {
+
     }
 
     // with objects
 
     @Test
     void findMaxObj() {
+
     }
 
     @Test
     void deleteMaxObj() {
+
     }
 
     @Test
