@@ -6,6 +6,7 @@ import java.util.NoSuchElementException;
 
 public class SimplePriorityQueue<Type> implements PriorityQueue<Type> {
 
+    private int size;
     private Type[] queue;
     private Comparator<? super Type> comparator;
 
@@ -26,7 +27,7 @@ public class SimplePriorityQueue<Type> implements PriorityQueue<Type> {
     private int binarySearch(Type target)
     {
         if(this.queue[0] == null) return 0;
-        int low = 0, high = this.nonNullElements()-1, mid = high / 2;
+        int low = 0, high = this.size - 1, mid = high / 2;
         while(low <= high)
         {
             mid = (low + high) / 2;
@@ -57,13 +58,6 @@ public class SimplePriorityQueue<Type> implements PriorityQueue<Type> {
         this.queue = newQueue;
     }
 
-    private int nonNullElements()
-    {
-        for(int i = 0; i < this.queue.length; i++)
-            if(this.queue[i] == null) return i;
-        return this.size();
-    }
-
     @Override
     public Type findMax() throws NoSuchElementException
     {
@@ -80,6 +74,7 @@ public class SimplePriorityQueue<Type> implements PriorityQueue<Type> {
         {
             this.queue[i] = this.queue[i+1];
         }
+        size--;
         return output;
     }
 
@@ -95,7 +90,7 @@ public class SimplePriorityQueue<Type> implements PriorityQueue<Type> {
     @Override
     public void insert(Type item)
     {
-        if(this.nonNullElements() + 1 >= this.size()) resize(this.size() + 1);
+        if(this.size + 1 >= this.size()) resize(this.size() + 1);
         int nearestIndex = binarySearch(item);
         int comp;
         if(this.queue[nearestIndex] == null) comp = 0;
@@ -108,13 +103,14 @@ public class SimplePriorityQueue<Type> implements PriorityQueue<Type> {
             shiftBack(nearestIndex + 1);
             this.queue[nearestIndex + 1] = item;
         }
+        size++;
     }
 
     @Override
     @SuppressWarnings("unchecked")
     public void insertAll(Collection<? extends Type> coll)
     {
-        if(this.nonNullElements() + coll.size() > this.size()) resize(this.nonNullElements() + coll.size());
+        if(this.size + coll.size() > this.size()) resize(this.size + coll.size());
         Type[] collArray = (Type[]) new Object[coll.size()];
         coll.toArray(collArray);
         for(Type item : collArray)
@@ -132,13 +128,13 @@ public class SimplePriorityQueue<Type> implements PriorityQueue<Type> {
     @Override
     public int size()
     {
-        return this.nonNullElements();
+        return this.size;
     }
 
     @Override
     public boolean isEmpty()
     {
-        return this.nonNullElements() == 0;
+        return this.size == 0;
     }
 
     @Override

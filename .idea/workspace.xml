@@ -94,7 +94,7 @@
       <workItem from="1693674534401" duration="42267000" />
       <workItem from="1694291460185" duration="20979000" />
       <workItem from="1694480957405" duration="16000" />
-      <workItem from="1694554944562" duration="1606000" />
+      <workItem from="1694554944562" duration="1784000" />
     </task>
     <task id="LOCAL-00001" summary="CS stuff">
       <created>1694461508038</created>
@@ -131,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694556737568</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="assign03 SimplePriorityQueue&lt;&gt; class first draft finished.">
+      <created>1694556789101</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1694556789101</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
