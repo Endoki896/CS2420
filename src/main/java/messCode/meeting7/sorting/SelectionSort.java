@@ -16,11 +16,35 @@ import java.util.Comparator;
 public class SelectionSort extends Sorter {
 
 	public void sort(Integer[] array) {
-		// Implement
+		int min, hand;
+		for(int i = 0; i < array.length; i++)
+		{
+			min = i;
+			for(int j = i; j < array.length; j++)
+			{
+				if(array[j].compareTo(array[min]) < 0)
+					min = j;
+			}
+			hand = array[i];
+			array[i] = array[min];
+			array[min] = hand;
+		}
 	}
 	
 	public void sort(Integer[] array, Comparator<Integer> comparator) {
-		// Implement
+		int min, hand;
+		for(int i = 0; i < array.length; i++)
+		{
+			min = i;
+			for(int j = i; j < array.length; j++)
+			{
+				if(comparator.compare(array[j], array[min]) < 0)
+					min = j;
+			}
+			hand = array[i];
+			array[i] = array[min];
+			array[min] = hand;
+		}
 	}
 	
 }

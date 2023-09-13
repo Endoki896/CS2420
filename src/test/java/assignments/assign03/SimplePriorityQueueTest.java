@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class SimplePriorityQueueTest {
 
-    private static int size = 16;
+    private static int size = 10;
 
     private static Integer[] testPrims = {
             0,
@@ -36,11 +36,24 @@ class SimplePriorityQueueTest {
             "Vindicate",
             "Zombie",
     };
-    private static Object[] testObjects = {};
+    private static Person[] testSubjects = {
+            new Person(40, "Bruce Wane"),
+            new Person(26, "Barry Allen"),
+            new Person(40, "Clark Kent"),
+            new Person(18, "Peter Parker"),
+            new Person(40, "Tony Stark"),
+            new Person(40, "Bruce Banner"),
+            new Person(1500, "Thor Odinson"),
+            new Person(5000, "Diana Prince"),
+            new Person(30, "Wanda Maximoff"),
+            new Person(53, "Clint Barton"),
+            new Person(179, "Steve Rodgers"),
+    };
 
     private static SimplePriorityQueue<Integer> queuePrim;
     private static SimplePriorityQueue<String> queueString;
-    private static SimplePriorityQueue<Object> queueObj;
+    private static SimplePriorityQueue<Person> queueObj;
+    private static SimplePriorityQueue<Person> queueCom;
 
     @BeforeEach
     void setUp()
@@ -48,12 +61,14 @@ class SimplePriorityQueueTest {
         // initialize all queues
         queuePrim = new SimplePriorityQueue<>();
         queueString = new SimplePriorityQueue<>();
-        //queueObj = new SimplePriorityQueue<>();
+        queueObj = new SimplePriorityQueue<>();
+        queueCom = new SimplePriorityQueue<>((a, b) -> a.name.compareTo(b.name));
 
         // insert test variables
         queuePrim.insertAll(arrayToList(testPrims));
         queueString.insertAll(arrayToList(testStrings));
-        // queueObj.insertAll(arrayToList(testObjects));
+        queueObj.insertAll(arrayToList(testSubjects));
+        queueCom.insertAll(arrayToList(testSubjects));
     }
 
     // helper
@@ -136,46 +151,135 @@ class SimplePriorityQueueTest {
 
     @Test
     void findMaxString() {
+        assertEquals("Zombie", queueString.findMax());
     }
 
     @Test
     void deleteMaxString() {
+        assertEquals("Zombie", queueString.deleteMax());
+        assertEquals("Vindicate",queueString.findMax());
     }
 
     @Test
     void insertString() {
+        queueString.insert("Zute");
+        assertEquals("Zute",queueString.findMax());
     }
 
     @Test
     void insertAllString() {
+        List<String> newString = Arrays.asList("Alpha","Beta");
+        queueString.insertAll(newString);
+        assertTrue(queueString.contains("Alpha"));
+        assertTrue(queueString.contains("Beta"));
+        assertEquals("Zombie", queueString.findMax());
     }
 
     @Test
     void containsString() {
-
+        //False test case for queueString
+        assertFalse(queueString.contains("Omega"));
+        //True test case for queueString
+        assertTrue(queueString.contains("Zombie"));
     }
 
     // with objects
-
+    // default
     @Test
     void findMaxObj() {
-
+        assertEquals(new Person(5000, "Diana Prince"), queueObj.findMax());
+        assertNotEquals(new Person(18, "Peter Parker"), queueObj.findMax());
     }
 
     @Test
     void deleteMaxObj() {
-
+        assertEquals(new Person(5000, "Diana Prince"), queueObj.deleteMax());
+        assertEquals(new Person(1500, "Thor Odinson"), queueObj.findMax());
     }
 
     @Test
     void insertObj() {
+        queueObj.insert(new Person(35, "Jack White"));
+        assertTrue(queueObj.contains(new Person(35, "Jack White")));
     }
 
     @Test
     void insertAllObj() {
+        List<Person> subjectList = Arrays.asList(new Person(62, "Eduardo Dorrance"), new Person(56, "Norman Osborn"), new Person(1000, "Thanos"));
+        queueObj.insertAll(subjectList);
+        assertTrue(queueObj.contains(new Person(62, "Eduardo Dorrance")));
+        assertTrue(queueObj.contains(new Person(56, "Norman Osborn")));
+        assertTrue(queueObj.contains(new Person(1000, "Thanos")));
     }
 
     @Test
     void containsObj() {
+        assertTrue(queueObj.contains(new Person(179, "Steve Rodgers")));
+    }
+
+    // comparator
+    @Test
+    void findMaxCom() {
+        assertEquals(new Person(30, "Wanda Maximoff"), queueCom.findMax());
+        assertNotEquals(new Person(1500, "Thor Odinson"), queueCom.findMax());
+    }
+
+    @Test
+    void deleteMaxCom() {
+        assertEquals(new Person(30, "Wanda Maximoff"), queueCom.deleteMax());
+        assertEquals(new Person(40, "Tony Stark"), queueCom.findMax());
+    }
+
+    @Test
+    void insertCom() {
+        queueCom.insert(new Person(35, "Jack White"));
+        assertTrue(queueCom.contains(new Person(35, "Jack White")));
+    }
+
+    @Test
+    void insertAllCom() {
+        List<Person> subjectList = Arrays.asList(new Person(62, "Eduardo Dorrance"), new Person(56, "Norman Osborn"), new Person(1000, "Thanos"));
+        queueCom.insertAll(subjectList);
+        assertTrue(queueCom.contains(new Person(62, "Eduardo Dorrance")));
+        assertTrue(queueCom.contains(new Person(56, "Norman Osborn")));
+        assertTrue(queueCom.contains(new Person(1000, "Thanos")));
+    }
+
+    @Test
+    void containsCom() {
+        assertTrue(queueCom.contains(new Person(179, "Steve Rodgers")));
+    }
+
+    static class Person implements Comparable<Person> {
+
+        public int age;
+        public String name;
+
+        public Person(int age, String name)
+        {
+            this.age = age;
+            this.name = name;
+        }
+
+        @Override
+        public int compareTo(Person o) {
+            return this.age - o.age;
+        }
+
+        @Override
+        public boolean equals(Object o)
+        {
+            if(!(o instanceof Person)) return false;
+
+            Person other = (Person) o;
+
+            return other.age == this.age && this.name.equals(other.name);
+        }
+
+        @Override
+        public String toString()
+        {
+            return this.name + ", " + this.age;
+        }
     }
 }

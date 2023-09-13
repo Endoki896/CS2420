@@ -80,7 +80,7 @@ public class SimplePriorityQueue<Type> implements PriorityQueue<Type> {
 
     private void shiftBack(int fromIndex)
     {
-        for(int i = this.queue.length - 1; i > 0; i--)
+        for(int i = this.size - 1; i > fromIndex; i--)
         {
             if(this.queue[i - 1] == null) continue;
             this.queue[i] = this.queue[i - 1];
@@ -94,7 +94,7 @@ public class SimplePriorityQueue<Type> implements PriorityQueue<Type> {
         int nearestIndex = binarySearch(item);
         int comp;
         if(this.queue[nearestIndex] == null) comp = 0;
-        else comp = this.comparator == null ? ((Comparable<? super Type>)this.queue[nearestIndex]).compareTo(item) : this.comparator.compare(this.queue[nearestIndex], item);
+        else comp = this.comparator == null ? ((Comparable<? super Type>) this.queue[nearestIndex]).compareTo(item) : this.comparator.compare(this.queue[nearestIndex], item);
         if(comp <= 0)
         {
             shiftBack(nearestIndex);
@@ -142,5 +142,6 @@ public class SimplePriorityQueue<Type> implements PriorityQueue<Type> {
     public void clear()
     {
         this.queue = (Type[]) new Object[0];
+        size = 0;
     }
 }
