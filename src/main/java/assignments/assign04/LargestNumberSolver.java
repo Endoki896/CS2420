@@ -31,7 +31,7 @@ public class LargestNumberSolver {
     public static BigInteger findLargestNumber(Integer[] arr)
     {
         Integer[] safeCopy = Arrays.copyOf(arr, arr.length);
-        Comparator<Integer> cmp = (a, b) -> (a.toString() + b.toString()).compareTo(b.toString() + a.toString());
+        Comparator<Integer> cmp = (a, b) -> Integer.compare(Integer.parseInt(b.toString() + a.toString()), Integer.parseInt(a + "" + b));
         insertionSort(safeCopy, cmp);
         StringBuilder bigNum = new StringBuilder();
         for(Integer i : safeCopy)
@@ -53,19 +53,41 @@ public class LargestNumberSolver {
         return bigNum.intValue();
     }
 
-    public static BigInteger sum(List<Integer[]> list)
-    {
-        return new BigInteger("0");
+    public static Integer[] findKthLargest(List<Integer[]> list, int k) throws IllegalArgumentException {
+        // Validate k
+        if (k < 0 || k >= list.size()) {
+            throw new IllegalArgumentException("Invalid value for k.");
+        }
+
+        // Sort the list using a custom Comparator
+        Integer[][] arr = new Integer[list.size()][];
+        arr = list.toArray(arr);
+        insertionSort(arr, new Comparator<Integer[]>() {
+            @Override
+            public int compare(Integer[] arr1, Integer[] arr2) {
+                BigInteger num1 = findLargestNumber(arr1);
+                BigInteger num2 = findLargestNumber(arr2);
+                return num2.compareTo(num1);  // Sort in descending order of largest numbers
+            }
+        });
+
+        return list.get(k);  // Return the kth largest array
     }
 
-    public static Integer[] findKthLargest(List<Integer[]> list, int k)
+    public static BigInteger sum(List<Integer[]> list)
     {
-        return new Integer[]{};
+        BigInteger totalSum = BigInteger.ZERO;
+        for (Integer[] arr : list) {
+            BigInteger largestNumber = findLargestNumber(arr); // Assuming you've implemented this method
+            totalSum = totalSum.add(largestNumber);
+        }
+
+        return totalSum;
     }
 
     public static List<Integer[]> readFile(String filename)
     {
-        File src = new File(filename);
+        File src = new File("drop/" + filename);
         try {
             Scanner sc = new Scanner(src);
             List<Integer[]> output = new ArrayList<>();

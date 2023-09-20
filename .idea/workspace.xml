@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0beb3ef9-589d-428b-8ac5-8e0a8803efd3" name="Changes" comment="assign03 SimplePriorityQueueTest finished; just needs some comments.">
-      <change afterPath="$PROJECT_DIR$/drop/integers.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign03/RuntimeCollecter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign04/LargestNumberSolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign04/OutOfRangeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab04/PairProgamingPractice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting09/InsertionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting09/IterationAndRecursion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/assignments/assign04/LargestNumberSolverTest.java" afterDir="false" />
+    <list default="true" id="0beb3ef9-589d-428b-8ac5-8e0a8803efd3" name="Changes" comment="assign04 LargestNumberSolver finished.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assignments/assign04/LargestNumberSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignments/assign04/LargestNumberSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/assignments/assign04/LargestNumberSolverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/assignments/assign04/LargestNumberSolverTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +103,7 @@
       <workItem from="1694480957405" duration="16000" />
       <workItem from="1694554944562" duration="3344000" />
       <workItem from="1694638914171" duration="15571000" />
-      <workItem from="1694977581912" duration="12018000" />
+      <workItem from="1694977581912" duration="16339000" />
     </task>
     <task id="LOCAL-00001" summary="CS stuff">
       <created>1694461508038</created>
@@ -167,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694643378287</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="assign04 LargestNumberSolver finished.">
+      <created>1695243987154</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1695243987154</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +191,7 @@
     <MESSAGE value="assign03 SimplePriorityQueue&lt;&gt; class first draft finished." />
     <MESSAGE value="assign03 SimplePriorityQueue&lt;&gt; class revisions" />
     <MESSAGE value="assign03 SimplePriorityQueueTest finished; just needs some comments." />
-    <option name="LAST_COMMIT_MESSAGE" value="assign03 SimplePriorityQueueTest finished; just needs some comments." />
+    <MESSAGE value="assign04 LargestNumberSolver finished." />
+    <option name="LAST_COMMIT_MESSAGE" value="assign04 LargestNumberSolver finished." />
   </component>
 </project>
