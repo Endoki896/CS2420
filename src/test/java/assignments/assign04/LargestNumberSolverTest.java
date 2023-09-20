@@ -9,8 +9,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 
 class LargestNumberSolverTest {
 
@@ -68,9 +67,9 @@ class LargestNumberSolverTest {
         sampleList.add(new Integer[]{3, 1, 4, 1, 5, 9, 2, 6});// 96543211
         sampleList.add(new Integer[]{5, 3, 5});// 553
 
-        assertEquals(9, LargestNumberSolver.findKthLargest(sampleList, 1)); // First largest
-        assertEquals(6, LargestNumberSolver.findKthLargest(sampleList, 2)); // Second largest
-        assertEquals(5, LargestNumberSolver.findKthLargest(sampleList, 3)); // Third largest
+        assertTrue(Arrays.equals(LargestNumberSolver.findKthLargest(sampleList, 0), sampleList.get(0))); // First largest
+        assertTrue(Arrays.equals(LargestNumberSolver.findKthLargest(sampleList, 1), sampleList.get(1))); // Second largest
+        assertThrows(IllegalArgumentException.class, () -> LargestNumberSolver.findKthLargest(sampleList, 2));
     }
 
     @Test
