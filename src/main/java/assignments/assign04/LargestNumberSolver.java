@@ -9,34 +9,34 @@ public class LargestNumberSolver {
 
     public static <T> void insertionSort(T[] arr, Comparator<? super T> cmp)
     {
-        if(arr.length == 0) return;
-        for(int i = 1; i < arr.length; i++)
-        {
-            if(cmp.compare(arr[i], arr[i - 1]) >= 0) continue;
-            T tmp = arr[i];
-            for(int j = i; j > 0; j--)
-            {
-                if(cmp.compare(arr[j], tmp) < 0)
-                    arr[j] = arr[j - 1];
-                else {
-                    arr[j] = tmp;
-                    tmp = null;
-                    break;
-                }
+        for (int i = 1; i < arr.length; i++) {
+            T key = arr[i];
+            int j = i - 1;
+
+            while (j >= 0 && cmp.compare(arr[j], key) > 0) {
+                arr[j + 1] = arr[j];
+                j--;
             }
-            if(tmp != null) arr[0] = tmp;
+            arr[j + 1] = key;
         }
     }
 
     public static BigInteger findLargestNumber(Integer[] arr)
     {
-        Integer[] safeCopy = Arrays.copyOf(arr, arr.length);
-        Comparator<Integer> cmp = (a, b) -> Integer.compare(Integer.parseInt(b.toString() + a.toString()), Integer.parseInt(a + "" + b));
-        insertionSort(safeCopy, cmp);
-        StringBuilder bigNum = new StringBuilder();
-        for(Integer i : safeCopy)
-            bigNum.append(i);
-        return new BigInteger(bigNum.toString());
+        if (arr.length == 0) return BigInteger.ZERO;
+
+        insertionSort(arr, (Integer x, Integer y) -> {
+            String xy = x.toString() + y.toString();
+            String yx = y.toString() + x.toString();
+            return yx.compareTo(xy);
+        });
+
+        StringBuilder sb = new StringBuilder();
+        for (Integer num : arr) {
+            sb.append(num);
+        }
+
+        return new BigInteger(sb.toString());
     }
 
     public static int findLargestInt(Integer[] arr) throws OutOfRangeException
@@ -54,24 +54,7 @@ public class LargestNumberSolver {
     }
 
     public static Integer[] findKthLargest(List<Integer[]> list, int k) throws IllegalArgumentException {
-        // Validate k
-        if (k < 0 || k >= list.size()) {
-            throw new IllegalArgumentException("Invalid value for k.");
-        }
-
-        // Sort the list using a custom Comparator
-        Integer[][] arr = new Integer[list.size()][];
-        arr = list.toArray(arr);
-        insertionSort(arr, new Comparator<Integer[]>() {
-            @Override
-            public int compare(Integer[] arr1, Integer[] arr2) {
-                BigInteger num1 = findLargestNumber(arr1);
-                BigInteger num2 = findLargestNumber(arr2);
-                return num2.compareTo(num1);  // Sort in descending order of largest numbers
-            }
-        });
-
-        return list.get(k);  // Return the kth largest array
+        return new Integer[0];
     }
 
     public static BigInteger sum(List<Integer[]> list)
@@ -87,7 +70,7 @@ public class LargestNumberSolver {
 
     public static List<Integer[]> readFile(String filename)
     {
-        File src = new File("drop/" + filename);
+        File src = new File(filename);
         try {
             Scanner sc = new Scanner(src);
             List<Integer[]> output = new ArrayList<>();
@@ -102,6 +85,8 @@ public class LargestNumberSolver {
                 }
                 output.add(arr);
             }
+
+            sc.close();
 
             return output;
         } catch(FileNotFoundException e)

@@ -5,10 +5,12 @@ import org.junit.jupiter.api.Test;
 
 import java.io.File;
 import java.math.BigInteger;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class LargestNumberSolverTest {
 
@@ -21,6 +23,7 @@ class LargestNumberSolverTest {
     {
         intArr = new Integer[]{23, 5, 36, 8, 1};// largest num = 8,536,231
         longArr = new Integer[]{32, 32, 82, 99, 91, 11, 817, 93};
+        bigArr = new Integer[]{410, 21, 93, 80, 69, 379, 20, 60, 432, 13, 72, 62, 70, 83, 9, 3, 14, 11, 62, 55, 34, 83, 80, 99, 56, 25, 79, 51, 51, 70, 79, 20, 34, 67, 40, 51, 41, 94, 89, 116, 874, 554, 137, 371, 17, 77, 97, 58, 83, 97, 26, 17, 54, 96, 33};
     }
 
     @Test
@@ -37,7 +40,9 @@ class LargestNumberSolverTest {
 
     @Test
     void findLargestIntExceptionTest()
-    {}
+    {
+        assertThrows(OutOfRangeException.class, () -> LargestNumberSolver.findLargestInt(bigArr));
+    }
 
     @Test
     void findLargestLongTest()
@@ -59,19 +64,20 @@ class LargestNumberSolverTest {
 
     @Test
     void testFindKthLargest() {
-        List<Integer[]> file = LargestNumberSolver.readFile("integers.txt");
-        print(file.get(0));
-        assert Arrays.equals(new Integer[]{299, 95, 6, 62, 78, 87, 97, 27, 443, 100, 11, 55, 27, 78, 245, 89, 470, 2, 39, 75, 422, 676, 42, 78, 77, 48, 76, 28, 92, 610, 64, 94, 1362, 3, 16, 29, 749, 64, 89, 6, 41, 836, 83, 24, 18, 47, 90, 42, 52, 87, 70, 68, 78, 38, 76, 16, 18, 27, 84, 34, 28, 5, 12, 490, 24, 92, 11, 42, 19, 60, 73, 43, 14, 35, 99, 3, 39, 27, 5, 93, 53, 23, 25, 90, 65, 37, 75, 88, 21, 90, 28, 6, 55, 15, 57, 8, 48, 836, 39},
-                LargestNumberSolver.findKthLargest(file.subList(0, 10), 2));
+        List<Integer[]> sampleList = new ArrayList<>();
+        sampleList.add(new Integer[]{3, 1, 4, 1, 5, 9, 2, 6});// 96543211
+        sampleList.add(new Integer[]{5, 3, 5});// 553
 
-        assertEquals(1, LargestNumberSolver.findKthLargest(file.subList(0, 1), 1));
-
-        assertEquals(1, LargestNumberSolver.findKthLargest(file.subList(3, 12), 3));
+        assertEquals(9, LargestNumberSolver.findKthLargest(sampleList, 1)); // First largest
+        assertEquals(6, LargestNumberSolver.findKthLargest(sampleList, 2)); // Second largest
+        assertEquals(5, LargestNumberSolver.findKthLargest(sampleList, 3)); // Third largest
     }
 
-    public static void testBigSum() {
+    @Test
+    void testBigSum() {
         // Normal cases
-        assert LargestNumberSolver.sum(Arrays.asList(new Integer[][]{{1, 2, 3, 4, 5}, {6, 7, 8, 9, 10}})).equals(BigInteger.valueOf(54321 + 987610));
+        BigInteger sum = LargestNumberSolver.sum(Arrays.asList(new Integer[][]{{1, 2, 3, 4, 5}, {6, 7, 8, 9, 10}}));
+        assert sum.equals(BigInteger.valueOf(54321 + 987610)) : "Expected: " + (54321 + 987610) + "\nResult: " + sum;
         /*assert bigSum(new int[]{-1, -2, -3, -4, -5}) == -15;
         assert bigSum(new int[]{1, -2, 3, -4, 5}) == 3;
 

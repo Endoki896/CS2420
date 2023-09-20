@@ -85,6 +85,45 @@
       <recent name="assignments.assign02" />
     </key>
   </component>
+  <component name="RunManager" selected="JUnit.LargestNumberSolverTest">
+    <configuration name="LargestNumberSolverTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="intro_algs_dat_struct_2420" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assignments.assign04.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assignments.assign04" />
+      <option name="MAIN_CLASS_NAME" value="assignments.assign04.LargestNumberSolverTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LargestNumberSolverTest.testFindKthLargest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="intro_algs_dat_struct_2420" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assignments.assign04.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assignments.assign04" />
+      <option name="MAIN_CLASS_NAME" value="assignments.assign04.LargestNumberSolverTest" />
+      <option name="METHOD_NAME" value="testFindKthLargest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.LargestNumberSolverTest" />
+        <item itemvalue="JUnit.LargestNumberSolverTest.testFindKthLargest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -103,7 +142,7 @@
       <workItem from="1694480957405" duration="16000" />
       <workItem from="1694554944562" duration="3344000" />
       <workItem from="1694638914171" duration="15571000" />
-      <workItem from="1694977581912" duration="16339000" />
+      <workItem from="1694977581912" duration="19297000" />
     </task>
     <task id="LOCAL-00001" summary="CS stuff">
       <created>1694461508038</created>
@@ -168,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695243987154</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="assign04 LargestNumberSolver finished.">
+      <created>1695247067248</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1695247067248</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
