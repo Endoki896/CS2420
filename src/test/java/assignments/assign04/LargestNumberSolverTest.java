@@ -69,7 +69,7 @@ class LargestNumberSolverTest {
 
         assertTrue(Arrays.equals(LargestNumberSolver.findKthLargest(sampleList, 0), sampleList.get(0))); // First largest
         assertTrue(Arrays.equals(LargestNumberSolver.findKthLargest(sampleList, 1), sampleList.get(1))); // Second largest
-        assertThrows(IllegalArgumentException.class, () -> LargestNumberSolver.findKthLargest(sampleList, 2));
+        assertThrows(IllegalArgumentException.class, () -> LargestNumberSolver.findKthLargest(sampleList, 2)); // Third largest DNE
     }
 
     @Test
