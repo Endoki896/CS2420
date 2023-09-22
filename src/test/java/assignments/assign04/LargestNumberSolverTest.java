@@ -91,7 +91,7 @@ class LargestNumberSolverTest {
     @Test
     void readFileTest()
     {
-        String path = new File("integers.txt").getAbsolutePath();
+        String path = new File("drop/integers.txt").getAbsolutePath();
         List<Integer[]> list = LargestNumberSolver.readFile(path);
         assertEquals(list.get(0)[0], 410);
     }

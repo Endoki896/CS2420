@@ -97,10 +97,11 @@ public class LargestNumberSolver {
         }
 
         Comparator<Integer[]> customComparator = (arr1, arr2) -> {
-            BigInteger num1 = findLargestNumber(arr1);
-            BigInteger num2 = findLargestNumber(arr2);
+            BigInteger num1 = findLargestNumber(Arrays.copyOf(arr1, arr1.length));
+            BigInteger num2 = findLargestNumber(Arrays.copyOf(arr2, arr2.length));
             return num2.compareTo(num1);
         };
+
         Integer[][] sortList = list.toArray(new Integer[list.size()][]);
         insertionSort(sortList, customComparator);
 
