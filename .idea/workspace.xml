@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0beb3ef9-589d-428b-8ac5-8e0a8803efd3" name="Changes" comment="assign04 LargestNumberSolver finished.">
+    <list default="true" id="0beb3ef9-589d-428b-8ac5-8e0a8803efd3" name="Changes" comment="assign04 LargestNumberSolver.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign04/RuntimeCollector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting10/MaximumContiguousSubsequenceSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting10/MessySort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/messCode/meeting10/MessySortTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/assignments/assign04/LargestNumberSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignments/assign04/LargestNumberSolver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/assignments/assign04/LargestNumberSolverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/assignments/assign04/LargestNumberSolverTest.java" afterDir="false" />
@@ -58,11 +62,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/messCode/meeting10" />
       <recent name="$PROJECT_DIR$/src/main/java/messCode/meeting09" />
       <recent name="$PROJECT_DIR$/src/main/java/assignments/assign04" />
       <recent name="$PROJECT_DIR$/src/main/java/assignments/assign03" />
       <recent name="$PROJECT_DIR$/src/main/java/labs/lab03" />
-      <recent name="$PROJECT_DIR$/src/main/java/messCode/meeting06" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -75,17 +79,18 @@
       <recent name="messCode.meeting06.search" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="messCode.meeting10" />
       <recent name="assignments.assign04" />
       <recent name="assignments.assign03" />
       <recent name="assignments.assign02" />
       <recent name="" />
-      <recent name="messCode.meeting04.set" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="assignments.assign04" />
       <recent name="assignments.assign02" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LargestNumberSolverTest">
+  <component name="RunManager">
     <configuration name="LargestNumberSolverTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="intro_algs_dat_struct_2420" />
       <extension name="coverage">
@@ -117,8 +122,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MessySortTest.mergeSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="intro_algs_dat_struct_2420" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="messCode.meeting10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="messCode.meeting10" />
+      <option name="MAIN_CLASS_NAME" value="messCode.meeting10.MessySortTest" />
+      <option name="METHOD_NAME" value="mergeSort" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MessySortTest.mergeSort" />
         <item itemvalue="JUnit.LargestNumberSolverTest" />
         <item itemvalue="JUnit.LargestNumberSolverTest.testFindKthLargest" />
       </list>
@@ -142,7 +164,7 @@
       <workItem from="1694480957405" duration="16000" />
       <workItem from="1694554944562" duration="3344000" />
       <workItem from="1694638914171" duration="15571000" />
-      <workItem from="1694977581912" duration="19297000" />
+      <workItem from="1694977581912" duration="30301000" />
     </task>
     <task id="LOCAL-00001" summary="CS stuff">
       <created>1694461508038</created>
@@ -214,7 +236,28 @@
       <option name="project" value="LOCAL" />
       <updated>1695247067248</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="assign04 LargestNumberSolver.">
+      <created>1695249953510</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1695249953510</updated>
+    </task>
+    <task id="LOCAL-00012" summary="assign04 LargestNumberSolver.">
+      <created>1695250186972</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1695250186972</updated>
+    </task>
+    <task id="LOCAL-00013" summary="assign04 LargestNumberSolver.">
+      <created>1695250373076</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1695250373076</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +281,7 @@
     <MESSAGE value="assign03 SimplePriorityQueue&lt;&gt; class revisions" />
     <MESSAGE value="assign03 SimplePriorityQueueTest finished; just needs some comments." />
     <MESSAGE value="assign04 LargestNumberSolver finished." />
-    <option name="LAST_COMMIT_MESSAGE" value="assign04 LargestNumberSolver finished." />
+    <MESSAGE value="assign04 LargestNumberSolver." />
+    <option name="LAST_COMMIT_MESSAGE" value="assign04 LargestNumberSolver." />
   </component>
 </project>

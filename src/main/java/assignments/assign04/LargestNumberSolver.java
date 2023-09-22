@@ -54,14 +54,27 @@ public class LargestNumberSolver {
     }
 
     public static Integer[] findKthLargest(List<Integer[]> list, int k) throws IllegalArgumentException {
-        return new Integer[0];
+        if (k < 0 || k >= list.size()) {
+            throw new IllegalArgumentException("k is not a valid position in the list.");
+        }
+
+        Comparator<Integer[]> customComparator = (arr1, arr2) -> {
+            BigInteger num1 = findLargestNumber(arr1);
+            BigInteger num2 = findLargestNumber(arr2);
+            return num2.compareTo(num1);
+        };
+
+        Integer[][] sortList = list.toArray(new Integer[list.size()][]);
+        insertionSort(sortList, customComparator);
+
+        return sortList[k];
     }
 
     public static BigInteger sum(List<Integer[]> list)
     {
         BigInteger totalSum = BigInteger.ZERO;
         for (Integer[] arr : list) {
-            BigInteger largestNumber = findLargestNumber(arr); // Assuming you've implemented this method
+            BigInteger largestNumber = findLargestNumber(arr);
             totalSum = totalSum.add(largestNumber);
         }
 

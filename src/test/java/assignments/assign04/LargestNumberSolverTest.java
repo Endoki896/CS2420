@@ -77,17 +77,6 @@ class LargestNumberSolverTest {
         // Normal cases
         BigInteger sum = LargestNumberSolver.sum(Arrays.asList(new Integer[][]{{1, 2, 3, 4, 5}, {6, 7, 8, 9, 10}}));
         assert sum.equals(BigInteger.valueOf(54321 + 987610)) : "Expected: " + (54321 + 987610) + "\nResult: " + sum;
-        /*assert bigSum(new int[]{-1, -2, -3, -4, -5}) == -15;
-        assert bigSum(new int[]{1, -2, 3, -4, 5}) == 3;
-
-        // Edge cases
-        assert bigSum(new int[]{0, 0, 0, 0}) == 0;
-        assert bigSum(new int[]{42}) == 42;
-        assert bigSum(new int[]{}) == 0;
-
-        // Side cases
-        assert bigSum(new int[]{3, 3, 3, 3, 3}) == 15;
-        assert bigSum(new int[]{Integer.MAX_VALUE, Integer.MAX_VALUE}) == 4294967294L; // Long sum needed*/
     }
 
     @Test
