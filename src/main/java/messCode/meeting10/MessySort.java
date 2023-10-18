@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 public class MessySort {
+    // Merge sort
+
     public static <T> void mergeSort(T[] arr, Comparator<? super T> cmp)
     {
         if(cmp == null) throw new IllegalArgumentException("Must input a comparator");
@@ -12,9 +14,9 @@ public class MessySort {
 
     private static <T> void mergeSort(T[] arr, int lower, int upper, Comparator<? super T> cmp)
     {
-        int mid = (lower + upper) / 2;
-        if(lower < upper)
+        if(upper - lower > 1)
         {
+            int mid = (lower + upper) / 2;
             mergeSort(arr, lower, mid, cmp);
             mergeSort(arr, mid, upper, cmp);
             merge(arr, lower, mid, upper, cmp);
@@ -27,18 +29,15 @@ public class MessySort {
         T[] l = Arrays.copyOfRange(arr, lower, mid);
         T[] u = Arrays.copyOfRange(arr, mid, upper);
 
-        int i = 0;
-        int j = 0;
+        int i = 0, j = 0;
         int index = lower;
         while(i < l.length && j < u.length)
         {
-            if(cmp.compare(l[i], u[i]) < 0)
+            if(cmp.compare(l[i], u[j]) < 0)
             {
-                arr[index] = l[i];
-                i++;
+                arr[index] = l[i++];
             } else {
-                arr[index] = u[j];
-                j++;
+                arr[index] = u[j++];
             }
             index++;
         }
@@ -57,6 +56,8 @@ public class MessySort {
             index++;
         }
     }
+
+    // Quick sort
 
     public static <T> void quickSort(T[] arr, Comparator<? super T> cmp)
     {

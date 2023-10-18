@@ -5,9 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0beb3ef9-589d-428b-8ac5-8e0a8803efd3" name="Changes" comment="assign04 LargestNumberSolver.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign05/ArrayListSorter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign05/SortTimer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign06/ArrayStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign06/LinkedListStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign06/List.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign06/SinglyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign06/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign06/StackRuntimeCollection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/assignments/assign06/WebBrowser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab06/IteratorDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab06/SimplePriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/labs/lab07/BetterRandomNumberGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting11/Recursion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting13/ArrayQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting13/ArrayStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting13/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting13/LinkedStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting13/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting13/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/assignments/assign05/ArrayListSorterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assignments/assign04/LargestNumberSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignments/assign04/LargestNumberSolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/assignments/assign04/LargestNumberSolverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/assignments/assign04/LargestNumberSolverTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assignments/assign04/RuntimeCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignments/assign04/RuntimeCollector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/messCode/meeting10/MaximumContiguousSubsequenceSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting10/MaximumContiguousSubsequenceSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/messCode/meeting10/MessySort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/messCode/meeting10/MessySort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/messCode/meeting10/MessySortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/messCode/meeting10/MessySortTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +39,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -33,60 +55,77 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "show.migrate.to.gradle.popup": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/messCode/meeting10" />
-      <recent name="$PROJECT_DIR$/src/main/java/messCode/meeting09" />
-      <recent name="$PROJECT_DIR$/src/main/java/assignments/assign04" />
-      <recent name="$PROJECT_DIR$/src/main/java/assignments/assign03" />
-      <recent name="$PROJECT_DIR$/src/main/java/labs/lab03" />
+      <recent name="$PROJECT_DIR$/src/main/java/assignments/assign06" />
+      <recent name="$PROJECT_DIR$/src/main/java/labs" />
+      <recent name="$PROJECT_DIR$/src/main/java/messCode/meeting13" />
+      <recent name="$PROJECT_DIR$/src/main/java/messCode/meeting12" />
+      <recent name="$PROJECT_DIR$/src/main/java/messCode" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="assignments.assign05" />
       <recent name="messCode.meeting7.sorting" />
       <recent name="messCode.meeting7.simple_array" />
       <recent name="messCode.meeting7" />
       <recent name="messCode.meeting06.simple_array" />
-      <recent name="messCode.meeting06.search" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="assignments.assign05" />
       <recent name="messCode.meeting10" />
       <recent name="assignments.assign04" />
       <recent name="assignments.assign03" />
       <recent name="assignments.assign02" />
-      <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="labs.lab06" />
       <recent name="assignments.assign04" />
       <recent name="assignments.assign02" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration name="ArrayListSorterTest.mergesort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="intro_algs_dat_struct_2420" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assignments.assign05.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assignments.assign05" />
+      <option name="MAIN_CLASS_NAME" value="assignments.assign05.ArrayListSorterTest" />
+      <option name="METHOD_NAME" value="mergesort" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LargestNumberSolverTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="intro_algs_dat_struct_2420" />
       <extension name="coverage">
@@ -136,8 +175,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MessySortTest.mergeSort" />
+        <item itemvalue="JUnit.ArrayListSorterTest.mergesort" />
         <item itemvalue="JUnit.LargestNumberSolverTest" />
+        <item itemvalue="JUnit.MessySortTest.mergeSort" />
         <item itemvalue="JUnit.LargestNumberSolverTest.testFindKthLargest" />
       </list>
     </recent_temporary>
@@ -160,7 +200,12 @@
       <workItem from="1694480957405" duration="16000" />
       <workItem from="1694554944562" duration="3344000" />
       <workItem from="1694638914171" duration="15571000" />
-      <workItem from="1694977581912" duration="31762000" />
+      <workItem from="1694977581912" duration="47517000" />
+      <workItem from="1695997793144" duration="7503000" />
+      <workItem from="1696297972311" duration="7244000" />
+      <workItem from="1696446383537" duration="22848000" />
+      <workItem from="1696568179232" duration="8035000" />
+      <workItem from="1697335235734" duration="7731000" />
     </task>
     <task id="LOCAL-00001" summary="CS stuff">
       <created>1694461508038</created>
@@ -267,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695353740580</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="assign04 LargestNumberSolver.">
+      <created>1695355500066</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1695355500066</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -10,14 +10,15 @@ public class RuntimeCollector {
         double[] averageRuntimes = new double[20];
         double curAverage = 0;
         long start, end;
+        int increment = 1000;
         List<Integer[]> testList;
 
-        for(int n = 100; n <= 2000; n += 100)
+        for(int n = increment; n <= increment * 20; n += increment)
         {
             testList = buildTestList(n);
             System.out.print("Warming system...");
             warmup();
-            System.out.print(" Done!\nStarting test " + (n / 100) + " of 20...");
+            System.out.print(" Done!\nStarting test " + (n / increment) + " of 20...");
             for(int j = 0; j < 100; j++)
             {
                 start = System.nanoTime();
@@ -26,7 +27,7 @@ public class RuntimeCollector {
                 curAverage = curAverage == 0 ? end - start : (curAverage + (end - start)) / 2.0;
             }
             System.out.println(" Done!");
-            averageRuntimes[(n / 100) - 1] = curAverage;
+            averageRuntimes[(n / increment) - 1] = curAverage;
             curAverage = 0;
         }
         System.out.println("Runtime collection finished!");

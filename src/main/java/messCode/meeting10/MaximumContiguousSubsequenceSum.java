@@ -10,7 +10,7 @@ import java.util.Arrays;
  * @version 2023-09-21
  */
 public class MaximumContiguousSubsequenceSum {
-	
+	// or MCSS
 	public static void main(String[] args) {
 		int[] array1 = { 4, -3, 5, -2, -1, 2, 6, -2 };
 		System.out.println("-----\n" + Arrays.toString(array1));
@@ -101,6 +101,7 @@ public class MaximumContiguousSubsequenceSum {
 		
 		int leftMax = computeRecursive(array, lower, mid);
 		int rightMax = computeRecursive(array, mid + 1, upper);
+
 		int spanningMax = computeSpanningMax(array, lower, mid, upper);
 		
 		return Math.max(spanningMax, Math.max(leftMax, rightMax));
